@@ -1,80 +1,218 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
   <meta charset="utf-8">
-  <link rel="shortcut icon" href="captiveportal-favicon.ico" />
-  <title>Calvin's Guest</title>
+  <title>nòva WiFi</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="captiveportal-bootstrap.min.css" rel="stylesheet">
+
   <style type="text/css">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> 
+      
+.text{
+    padding-top: 16%;
+    font-family: 'Roboto', sans-serif !important;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    text-align: center;
+      }
+      
+.left_col {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Roboto', sans-serif;
+    width: 60%;
+}
+    
+.form-control{
+          font-size: 20px;
+    width: 100%;
+    -webkit-appearance: none;
+border: none;
+    background-color: #0a3264;
+      }
+      
+      .form-control[type=password]{
+          width: 70%;
+      }
+      
+        @media screen and (max-width: 1000px) {
+    .form-control[type=password]{
+          width: 40%;
+      } }
+      
+      [placeholder]{
+          padding:7px;
+          color: #fff;
+      }
+      
+      [type=submit] {
+    float: right;
+          padding-top:5px;
+          padding-bottom:5px;
+    border: 2px solid #ffffff !important;
+      border-radius: 0 !important;
+      -webkit-appearance: none !important;
+      -moz-appearance: none !important;
+      appearance: none !important;
+      font-family: 'Roboto', sans-serif !important;
+          color:#fff;
+          font-size: 20px;
+      }
+      
+     [type=submit]:hover {
+      background-color: #0b132b !important;
+             transition: all 0.23s ease-in-out 0s;
+          
+}
+      
+      fieldset{
+          margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+   height: 300px;
+        border:none;
+          -webkit-appearance: none;
+      }
+     
     body {
-      background: url(captiveportal-back.png);
-      background-color: #444;
-      background: url(captiveportal-pinlayer2.png),url(captiveportal-pinlayer1.png),url(captiveportal-back.png);    
+        background: url("logo-footer.gif") no-repeat bottom;
+        background-size: 100%;
+        height: 30%;
+        display: block;
+        margin-bottom: 0px;
     }
-    .vertical-offset-100 {
-      padding-top:100px;
-    }    
+      
+      body:hover{
+          transition: all 0.23s ease-in-out 0s;
+          background-size: 200%;
+      }
+      
+      @media screen and (max-width: 1000px) {
+    body {
+        background-size: 200%;
+          }
+    body:hover{
+          transition: all 0.23s ease-in-out 0s;
+        background-size: 300%;}
+      
+      }
+      
+footer {
+  width: 100%;
+  text-align: center;
+      position: fixed;
+      bottom: 0;}
+      
+      
+  footer p.credits {
+      font-family: 'Roboto', sans-serif;
+    width: 140px;
+    font-size: 0.6em;
+    margin: 0 auto;
+    margin-top: 10px;
+      margin-bottom: 0px;
+    padding: 4px;
+    background: #fff;
+    color: #0b132b;
+    position: relative;}
+      
+    footer p.credits a {
+      color: #0b132b;
+      text-decoration: none; }
+      
+      footer p.credits a:hover {
+        color: #f8c537; 
+      transition: all .15s;}      
+      
   </style>
   <script src="captiveportal-jquery-1.11.1.min.js"></script>
   <script src="captiveportal-bootstrap.min.js"></script>
+    
+      <link rel="icon" type="image/png" sizes="192x192"  href="http://ff3300.com/demo_nova2/source/images/android-icon-192x192.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="http://ff3300.com/demo_nova2/source/images/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="96x96" href="http://ff3300.com/demo_nova2/source/images/favicon-96x96.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="http://ff3300.com/demo_nova2/source/images/favicon-16x16.png">
 </head>
 <body>
-  <script src="captiveportal-tweenlite.min.js"></script>
+  <script src="captiveportal-tweenlite.min.js">   
+    </script>
+    <script>
+    
+      var color=['#0a3264','#f8c537','#ff3b2c', '#9225a5'];
+
+      var arr = [];
+      while(arr.length < 2){
+        var r = Math.floor(Math.random() * 4) + 0;
+        if(arr.indexOf(r) === -1) arr.push(r);
+}
+    var choose = color[arr[0]];
+	var choose2 = color[arr[1]];
+      
+        
+var editCSS = document.createElement('style')
+editCSS.innerHTML = "body {background:"+ choose +" url('logo-footer.gif') no-repeat bottom;}";
+document.body.appendChild(editCSS);
+        
+        var editCSS1 = document.createElement('style')
+editCSS1.innerHTML = ".text {color:"+ choose2+";}";
+document.body.appendChild(editCSS1);
+        
+var editCSS2 = document.createElement('style')
+editCSS2.innerHTML = ".form-control {background-color:"+ choose2+";}";
+document.body.appendChild(editCSS2);
+
+var editCSS3 = document.createElement('style')
+editCSS3.innerHTML = "[type=submit] {background-color:"+ choose2+";}";
+document.body.appendChild(editCSS3);
+
+var editCSS4 = document.createElement('style')
+editCSS4.innerHTML = "footer p.credits a:hover {color:"+ choose+";}";
+document.body.appendChild(editCSS4);
+      
+
+    </script>
+    
+    
+    <div>
+        <h1 class="text">Ex caserma militare, nòva oggi è un centro di aggregazione giovanile e produzione culturale.</h1>
+        <p></p>
+        <h5 class="text" style='padding-top: 1%;'>ATTENZIONE! dati non validi
+            <p></p>
+            questa rete è ad uso riservato, connettiti a Novara WiFi</h5>
+    </div>
+    <p></p>
+        
+        
 
   <div class="container">
-    <div class="row vertical-offset-100">
-      <div class="col-md-6 col-md-offset-3">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title">Network Access Agreements</h3>
-          </div>
+      
           <div class="panel-body">
             <form method="post" action="$PORTAL_ACTION$" accept-charset="UTF-8" role="form">
               <fieldset>
-                <h4 class="text-center" style="color:red">Invalid secret word. Have you tried asking Calvin?</h4>
                 <!-- Required input boxes for portal page to work. Only required if user authentication is needed. -->
-                <p>You are responsible for the security and appropriate use of Trungthi Bui's (hereby Calvin) network resources under your control. Using Calvin's resources for the following is strictly prohibited:</p>
-                <ul>
-                  <li>Causing a security breach to either Calvin or other network resources, including, but not limited to, accessing data, servers, or accounts to which you are not authorized; circumventing user authentication on any device; or sniffing network traffic. </li>
-
-                  <li>Causing a disruption of service to either Calvin or other network resources, including, but not limited to, ICMP floods, packet spoofing, denial of service, heap or buffer overflows, and forged routing information for malicious purposes.</li>
-
-                  <li>Introducing honeypots, honeynets, or similar technology on Calvin's network.</li>
-
-                  <li>Violating copyright law, including, but not limited to, illegally duplicating or transmitting copyrighted pictures, music, video, and software. </li>
-
-                  <li>Exporting or importing software, technical information, encryption software, or technology in violation of international or regional export control laws.</li>
-
-                  <li>Use of the Internet or Calvin's network that violates local laws.</li>
-
-                  <li>Intentionally introducing malicious code, including, but not limited to, viruses, worms, Trojan horses, e-mail bombs, spyware, adware, and keyloggers. </li>
-
-                  <li>Port scanning or security scanning on a production network unless authorized in advance by Information Security.</li>
-                </ul>
+                <p></p>
                 <div class="form-group">
-                  <input name="auth_user" type="text" placeholder="Super secret word?" class="form-control">
+                  <input name="auth_user" type="text" placeholder="nome" class="form-control">
                 </div>
-                <input name="auth_pass" type="text" class="hidden" value="password">
+                  <p></p>
+                <div class="form-group">
+                  <input name="auth_pass" autocomplete="false" type="password" placeholder="pass" class="form-control">
+                    <input class="btn btn-lg btn-success btn-block" name="accept" type="submit" value="VAI!">
+                    </div>
                 <input name="redirurl" type="hidden" value="captiveportal-success.html">
-                <input class="btn btn-lg btn-success btn-block" name="accept" type="submit" value="I Agree">
+                  <p></p>
+                  <div>
+        
+    </div>
               </fieldset>
             </form>
           </div>
+
         </div>
-      </div>
-    </div>
-  </div><script type="text/javascript">
-  $(document).ready(function(){
-    $(document).mousemove(function(e){
-     TweenLite.to($('body'), 
-      .5, 
-      { css: 
-        {
-          backgroundPosition: ""+ parseInt(event.pageX/8) + "px "+parseInt(event.pageY/'12')+"px, "+parseInt(event.pageX/'15')+"px "+parseInt(event.pageY/'15')+"px, "+parseInt(event.pageX/'30')+"px "+parseInt(event.pageY/'30')+"px"
-        }
-      });
-   });
-  });</script>
+    
+<footer>
+    <p class="credits">design: <a href="http://www.ff3300.com/" target="_blank" title="credits">FF3300</a> & <a title="credits">Raffons</a></p>
+</footer>
 </body>
 </html>
