@@ -17,3 +17,5 @@ da sistemare:
 ![](https://media.giphy.com/media/UqNKrEKkOWmkWT05I6/giphy.gif)
 
 il font "nòva" è stato sostituito con "roboto"
+
+ispirato al lavoro dello studio FF3300 https://www.ff3300.com/works/nova
