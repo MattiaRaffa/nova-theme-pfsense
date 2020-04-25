@@ -1,17 +1,17 @@
-pfSense Captive Portal
+nòva Captive Portal
 =============
 
-A captive portal for pfsense.
+Captive portal con il tema nòva
+http://casermapassalacqua.it/
 
-Only requires one word to login (other fields are being kept private) - the username
+login con nome e pass
 
-If you are to use multiple users, you should make the username and password visible for users to enter in both details.
+* Colori casuali ad ogni accesso entro la palette
+* Responsive desktop, mobiles e tablet
+* eliminato effetto parallax
 
-* Parallax Background effect from [here]
-* Responsive, works on desktops, mobiles and tablets
-* Built on Twitter Bootstrap 3
-* Network use agreement
+da sistemare:
 * Error Page when unsuccessful
 * Logout Page
 
-[here]:http://bootsnipp.com/snippets/featured/parallax-login-form
+
