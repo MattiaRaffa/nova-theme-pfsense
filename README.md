@@ -16,7 +16,7 @@ login con nome e pass
 da sistemare:
 * Logout Page
 
-![](https://media.giphy.com/media/UqNKrEKkOWmkWT05I6/giphy.gif)
+=============
 
 il font "nòva" è stato sostituito con "roboto"
 
