@@ -9,6 +9,7 @@ login con nome e pass
 * Colori casuali ad ogni accesso entro la palette
 * Responsive desktop, mobiles e tablet
 * eliminato effetto parallax
+* effetto on hover
 
 da sistemare:
 * Error Page when unsuccessful
