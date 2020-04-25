@@ -1,57 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
   <meta charset="utf-8">
   <link rel="shortcut icon" href="captiveportal-favicon.ico" />
-  <title>Calvin's Guest</title>
+  <title>nòva WiFi</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="captiveportal-bootstrap.min.css" rel="stylesheet">
-  <style type="text/css">
-    body {
-      background: url(captiveportal-back.png);
-      background-color: #444;
-      background: url(captiveportal-pinlayer2.png),url(captiveportal-pinlayer1.png),url(captiveportal-back.png);    
+  <!-- <link href="captiveportal-bootstrap.min.css" rel="stylesheet">-->
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> 
+  
+      .text{
+          padding-top: 18%;
+          font-family: 'Roboto', sans-serif !important;
+          color: #f8c537;
+          margin-left: auto;
+    margin-right: auto;
+          width: 60%;
+          text-align: center;
+          
+      }
+      
+    body {   
+        background: #0a3264 url("logo-footer.gif") no-repeat bottom;
+        background-size: 100%;
+        height: 30%;
+        display: block;
+        margin-bottom: 0px;
     }
+      
+      body:hover{
+          transition: all 0.23s ease-in-out 0s;
+          background-size: 200%;
+      }
+      
+      @media screen and (max-width: 1000px) {
+    body {
+        background-size: 200%;
+          }
+    body:hover{
+          transition: all 0.23s ease-in-out 0s;
+        background-size: 300%;}
+          .container {margin-bottom: 50%;
+          }
+      }
+          
+      .container {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Roboto', sans-serif;
+    width: 60%;
+    padding-bottom: 30%;
+    text-align: center;
+    -webkit-appearance: none;
+          border: none;
+         height:300px;
+}
+      
+      
     .vertical-offset-100 {
       padding-top:100px;
     }    
+          footer {
+  width: 100%;
+  text-align: center;
+      position: fixed;
+      bottom: 0;
+      font-family: 'Roboto', sans-serif;}
+      
+      
+  footer p.credits {
+      font-family: 'Roboto', sans-serif;
+    width: 140px;
+    font-size: 0.6em;
+    margin: 0 auto;
+    margin-top: 10px;
+      margin-bottom: 0px;
+    padding: 4px;
+    background: #fff;
+    color: #0b132b;
+    position: relative;}
+      
+    footer p.credits a {
+      color: #0b132b;
+      text-decoration: none; }
+      
+      footer p.credits a:hover {
+        color: #f8c537; 
+      transition: all .15s;
+          }
+          
   </style>
   <script src="captiveportal-jquery-1.11.1.min.js"></script>
+    
   <script src="captiveportal-bootstrap.min.js"></script>
+    <link rel="icon" type="image/png" sizes="192x192"  href="http://ff3300.com/demo_nova2/source/images/android-icon-192x192.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="http://ff3300.com/demo_nova2/source/images/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="96x96" href="http://ff3300.com/demo_nova2/source/images/favicon-96x96.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="http://ff3300.com/demo_nova2/source/images/favicon-16x16.png">
 </head>
 <body>
   <script src="captiveportal-tweenlite.min.js"></script>
+        <script>
+    
+      var color=['#0a3264','#f8c537','#ff3b2c', '#9225a5'];
+
+      var arr = [];
+      while(arr.length < 2){
+        var r = Math.floor(Math.random() * 4) + 0;
+        if(arr.indexOf(r) === -1) arr.push(r);
+}
+    var choose = color[arr[0]];
+	var choose2 = color[arr[1]];
+      
+        
+var editCSS = document.createElement('style')
+editCSS.innerHTML = "body {background:"+ choose +" url('logo-footer.gif') no-repeat bottom;}";
+document.body.appendChild(editCSS);
+        
+        var editCSS1 = document.createElement('style')
+editCSS1.innerHTML = ".text {color:"+ choose2+";}";
+document.body.appendChild(editCSS1);
+    </script>
 
   <div class="container">
     <div class="row vertical-offset-100">
       <div class="col-md-6 col-md-offset-3">
         <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title">Welcome!</h3>
-          </div>
-          <div class="panel-body">
-              <fieldset>
-                <h1>Success!</h1>
-                <p> 
-                    You are now connected to the network.
-                </p>
-              </fieldset>
-            </form>
-          </div>
+          <h1 class="text">SEI CONNESSO!</h1>
         </div>
       </div>
     </div>
-  </div><script type="text/javascript">
-  $(document).ready(function(){
-    $(document).mousemove(function(e){
-     TweenLite.to($('body'), 
-      .5, 
-      { css: 
-        {
-          backgroundPosition: ""+ parseInt(event.pageX/8) + "px "+parseInt(event.pageY/'12')+"px, "+parseInt(event.pageX/'15')+"px "+parseInt(event.pageY/'15')+"px, "+parseInt(event.pageX/'30')+"px "+parseInt(event.pageY/'30')+"px"
-        }
-      });
-   });
-  });</script>
+  </div>
+    
+    <footer>
+    <p class="credits">design: <a href="http://www.ff3300.com/" target="_blank" title="credits">FF3300</a> & <a title="credits">Raffons</a></p>
+</footer>
 </body>
 </html>
