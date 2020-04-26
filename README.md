@@ -17,6 +17,8 @@ da sistemare:
 * Logout Page
 
 il font "nòva" è stato sostituito con "roboto"
+attenzione il font deve essere incluso
+(prima del login internet non è disponibile)
 
 
 
