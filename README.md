@@ -15,12 +15,12 @@ login con nome e pass
 
 da sistemare:
 * Logout Page
+* cookies con 2 colori (per la pagina di conferma)
+* font non ufficiale offline (il font nova è riservato)
 
 il font "nòva" è stato sostituito con "roboto"
 attenzione il font deve essere incluso
-(prima del login internet non è disponibile)
-
-
+(prima del login non sarebbe disponibile)
 
 
 ispirato al lavoro dello studio FF3300 https://www.ff3300.com/works/nova
